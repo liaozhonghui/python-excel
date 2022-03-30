@@ -38,6 +38,7 @@ employee_config = pd.read_excel(excel_name, sheet_name=sheet_name['config']['emp
 project_config = pd.read_excel(excel_name, sheet_name=sheet_name['config']['project'])
 
 # 数据清洗
+# revenue收入数据清洗
 revenue = revenue.fillna(method='ffill')
 revenue_adv = revenue[revenue['收入类型'] == '广告']
 revenue_inapp = revenue[revenue['收入类型'] == '内购']
@@ -45,15 +46,15 @@ revenue = revenue[revenue['收入类型'] == '合计']
 revenue_adv.set_index('项目收入占比',inplace=True)
 revenue_inapp.set_index('项目收入占比',inplace=True)
 revenue.set_index('项目收入占比',inplace=True)
+revenue_percent = revenue.loc['占比'][1:]
+
 
 cloud.set_index('费用项',inplace=True)
 project_config.fillna(0, inplace=True)
 project_config.set_index('项目', inplace=True)
 # 数据运算
-revenue_percent = revenue.loc['占比'][1:]
 cloud_fee_items = cloud.index.values
 cloud_project_config = project_config[cloud_fee_items]
-
 _cloud_aliyun_fee = cloud_project_config * revenue_percent
 cloud_aliyun_fee = _cloud_aliyun_fee / _cloud_aliyun_fee.sum() * cloud['阿里云']['费用']
 # target fees
