@@ -48,6 +48,13 @@ revenue_inapp.set_index('项目收入占比',inplace=True)
 revenue.set_index('项目收入占比',inplace=True)
 revenue_percent = revenue.loc['占比'][1:]
 
+# project_config数据清洗
+# 1. 计算列索引
+# 2. 删除无用行
+project_config.columns = list(project_config.columns.values[0:4]) + list(project_config.loc[0][4:].values)
+project_config = project_config.drop(0).fillna(0)
+
+pd.merge(project_config,revenue_percent, on='')
 
 cloud.set_index('费用项',inplace=True)
 project_config.fillna(0, inplace=True)
