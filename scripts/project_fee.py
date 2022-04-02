@@ -58,25 +58,35 @@ cloud.set_index('费用项',inplace=True)
 technical = pd.read_excel(excel_name, sheet_name=sheet_name['source']['technical'])
 technical.set_index('费用项',inplace=True)
 technical_nomatched = technical.loc['不能匹配项目费用']
-technical.drop('不能匹配项目费用')
+technical.drop('不能匹配项目费用', inplace=True)
 
 # 5. 清洗运营费用数据
 operation = pd.read_excel(excel_name, sheet_name=sheet_name['source']['operation'])
 operation.set_index('费用项',inplace=True)
-operation_nomatched = operation.loc['不能匹配项目费用']
-operation.drop('不能匹配项目费用')
+operation_nomatched_bj = operation.loc['北京天天不匹配项目运营费']
+operation.drop('北京天天不匹配项目运营费', inplace=True)
+operation_nomatched_cd = operation.loc['成都天天不匹配项目运营费']
+operation.drop('成都天天不匹配项目运营费', inplace=True)
 
 # 数据计算
 # 1. 计算云服务费
 # 2. 计算技术服务费
 # 3. 计算运营费用
+project_fee['技术服务费匹配项目费用'] = 0
+project_fee['运营费用匹配项目费用'] = 0
 for col in project_config_fee_percent.columns.values[3:-1]: 
     if col in cloud.index:
         project_fee[col] = project_config_fee_percent[col] * cloud.loc[col, '费用'] / 100
     elif col in ['技术服务费']:
-          project_fee[col] = project_config_fee_percent[col] * technical_nomatched['费用'] / 100 
-    elif col in ['运营费用']:
-          project_fee[col] = project_config_fee_percent[col] * operation_nomatched.loc[col, '费用'] / 100
+        print('计算了技术服务费')
+        project_fee[col] = project_config_fee_percent[col] * technical_nomatched['费用'] / 100 
+    elif col in ['北京天天不匹配项目运营费']:
+        print('计算了北京天天不匹配项目运营费')
+        project_fee[col] = project_config_fee_percent[col] * operation_nomatched_bj.loc[col, '费用'] / 100
+    elif col in ['成都天天不匹配项目运营费']:
+        print('计算了成都天天不匹配项目运营费')
+        project_fee[col] = project_config_fee_percent[col] * operation_nomatched_cd.loc[col, '费用'] / 100
+
 
 project_config
 
