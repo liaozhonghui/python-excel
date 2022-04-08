@@ -1,0 +1,17 @@
+2022-04-08 11:54:06.848 CST [27877] LOG:  starting PostgreSQL 14.1 on x86_64-apple-darwin20.6.0, compiled by Apple clang version 13.0.0 (clang-1300.0.29.3), 64-bit
+2022-04-08 11:54:06.851 CST [27877] LOG:  listening on IPv6 address "::1", port 5432
+2022-04-08 11:54:06.851 CST [27877] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2022-04-08 11:54:06.851 CST [27877] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2022-04-08 11:54:06.886 CST [27880] LOG:  database system was shut down at 2022-04-07 21:10:37 CST
+2022-04-08 11:54:06.899 CST [27877] LOG:  database system is ready to accept connections
+2022-04-08 12:10:14.450 CST [31045] ERROR:  relation "test_employee" does not exist at character 15
+2022-04-08 12:10:14.450 CST [31045] STATEMENT:  select * from test_employee;
+2022-04-08 12:10:20.628 CST [31045] ERROR:  relation "test_employee_config" does not exist at character 15
+2022-04-08 12:10:20.628 CST [31045] STATEMENT:  select * from test_employee_config;
+2022-04-08 15:27:22.989 CST [31045] ERROR:  relation "test_employee" does not exist at character 16
+2022-04-08 15:27:22.989 CST [31045] STATEMENT:  
+	select * from test_employee;
+	select * from test_timesheet;
+	select * from test_bjdepartment;
+	select * from test_cddepartment;
+	select * from test_employee_config;
