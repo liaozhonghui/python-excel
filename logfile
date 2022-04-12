@@ -25,3 +25,25 @@
 2022-04-11 18:15:36.714 CST [759] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
 2022-04-11 18:15:36.772 CST [760] LOG:  database system was shut down at 2022-04-08 19:03:28 CST
 2022-04-11 18:15:36.785 CST [759] LOG:  database system is ready to accept connections
+2022-04-11 20:37:38.050 CST [759] LOG:  received smart shutdown request
+2022-04-11 20:37:38.051 CST [759] LOG:  background worker "logical replication launcher" (PID 774) exited with exit code 1
+2022-04-11 20:37:38.051 CST [763] LOG:  shutting down
+2022-04-11 20:37:38.068 CST [759] LOG:  database system is shut down
+2022-04-12 11:43:09.543 CST [31934] LOG:  starting PostgreSQL 14.1 on x86_64-apple-darwin20.6.0, compiled by Apple clang version 13.0.0 (clang-1300.0.29.3), 64-bit
+2022-04-12 11:43:09.549 CST [31934] LOG:  listening on IPv6 address "::1", port 5432
+2022-04-12 11:43:09.549 CST [31934] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2022-04-12 11:43:09.550 CST [31934] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2022-04-12 11:43:09.584 CST [31935] LOG:  database system was shut down at 2022-04-11 20:37:38 CST
+2022-04-12 11:43:09.597 CST [31934] LOG:  database system is ready to accept connections
+2022-04-12 11:50:47.175 CST [34220] ERROR:  relation "timesheet" does not exist at character 15
+2022-04-12 11:50:47.175 CST [34220] STATEMENT:  select * from timesheet
+2022-04-12 11:50:47.176 CST [34222] ERROR:  relation "cddepartment" does not exist at character 15
+2022-04-12 11:50:47.176 CST [34222] STATEMENT:  select * from cddepartment
+2022-04-12 11:50:47.175 CST [34219] ERROR:  relation "bjdepartment" does not exist at character 15
+2022-04-12 11:50:47.175 CST [34219] STATEMENT:  select * from bjdepartment
+2022-04-12 11:50:47.177 CST [34221] ERROR:  relation "employee_config" does not exist at character 15
+2022-04-12 11:50:47.177 CST [34221] STATEMENT:  select * from employee_config
+2022-04-12 11:55:21.754 CST [35157] LOG:  could not receive data from client: Connection reset by peer
+2022-04-12 12:07:06.226 CST [37436] LOG:  could not receive data from client: Connection reset by peer
+2022-04-12 12:26:53.264 CST [42382] LOG:  could not receive data from client: Connection reset by peer
+2022-04-12 12:26:53.264 CST [42381] LOG:  could not receive data from client: Connection reset by peer
