@@ -47,3 +47,17 @@
 2022-04-12 12:07:06.226 CST [37436] LOG:  could not receive data from client: Connection reset by peer
 2022-04-12 12:26:53.264 CST [42382] LOG:  could not receive data from client: Connection reset by peer
 2022-04-12 12:26:53.264 CST [42381] LOG:  could not receive data from client: Connection reset by peer
+2022-04-13 15:56:37.125 CST [42871] LOG:  could not receive data from client: Connection reset by peer
+2022-04-13 16:00:07.414 CST [43561] LOG:  could not receive data from client: Connection reset by peer
+2022-04-13 16:00:07.414 CST [43560] LOG:  could not receive data from client: Connection reset by peer
+2022-04-13 16:00:35.335 CST [43983] LOG:  could not receive data from client: Connection reset by peer
+2022-04-13 20:57:18.979 CST [31934] LOG:  received smart shutdown request
+2022-04-13 20:57:18.994 CST [31934] LOG:  background worker "logical replication launcher" (PID 31941) exited with exit code 1
+2022-04-13 20:57:18.994 CST [31936] LOG:  shutting down
+2022-04-13 20:57:19.007 CST [31934] LOG:  database system is shut down
+2022-04-14 15:12:23.544 CST [57353] LOG:  starting PostgreSQL 14.1 on x86_64-apple-darwin20.6.0, compiled by Apple clang version 13.0.0 (clang-1300.0.29.3), 64-bit
+2022-04-14 15:12:23.549 CST [57353] LOG:  listening on IPv6 address "::1", port 5432
+2022-04-14 15:12:23.549 CST [57353] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2022-04-14 15:12:23.550 CST [57353] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2022-04-14 15:12:23.591 CST [57354] LOG:  database system was shut down at 2022-04-13 20:57:19 CST
+2022-04-14 15:12:23.605 CST [57353] LOG:  database system is ready to accept connections
