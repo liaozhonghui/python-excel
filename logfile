@@ -61,3 +61,7 @@
 2022-04-14 15:12:23.550 CST [57353] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
 2022-04-14 15:12:23.591 CST [57354] LOG:  database system was shut down at 2022-04-13 20:57:19 CST
 2022-04-14 15:12:23.605 CST [57353] LOG:  database system is ready to accept connections
+2022-04-14 20:30:30.482 CST [57353] LOG:  received smart shutdown request
+2022-04-14 20:30:30.484 CST [57353] LOG:  background worker "logical replication launcher" (PID 57360) exited with exit code 1
+2022-04-14 20:30:30.484 CST [57355] LOG:  shutting down
+2022-04-14 20:30:30.502 CST [57353] LOG:  database system is shut down
