@@ -65,3 +65,809 @@
 2022-04-14 20:30:30.484 CST [57353] LOG:  background worker "logical replication launcher" (PID 57360) exited with exit code 1
 2022-04-14 20:30:30.484 CST [57355] LOG:  shutting down
 2022-04-14 20:30:30.502 CST [57353] LOG:  database system is shut down
+2022-04-18 11:30:24.008 CST [27566] LOG:  starting PostgreSQL 14.1 on x86_64-apple-darwin20.6.0, compiled by Apple clang version 13.0.0 (clang-1300.0.29.3), 64-bit
+2022-04-18 11:30:24.014 CST [27566] LOG:  listening on IPv6 address "::1", port 5432
+2022-04-18 11:30:24.014 CST [27566] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2022-04-18 11:30:24.015 CST [27566] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2022-04-18 11:30:24.069 CST [27567] LOG:  database system was shut down at 2022-04-15 18:31:42 CST
+2022-04-18 11:30:24.084 CST [27566] LOG:  database system is ready to accept connections
+2022-04-18 16:43:06.780 CST [73173] ERROR:  type "double" does not exist at character 134
+2022-04-18 16:43:06.780 CST [73173] STATEMENT:  
+	create table source_spend_revenue(
+		id serial primary key,
+		month int not null,
+		type int not null,
+		project text not null,
+		amount double default 0,
+		percent double default 0,
+		created timestamptz,
+		updated timestamptz
+	)
+2022-04-18 16:54:07.117 CST [73173] ERROR:  column "amounts" is of type double precision[] but default expression is of type integer
+2022-04-18 16:54:07.117 CST [73173] HINT:  You will need to rewrite or cast the expression.
+2022-04-18 16:54:07.117 CST [73173] STATEMENT:  drop table if exists source_spend_revenue;
+	create table source_spend_revenue(
+		id serial primary key,
+		month int not null,
+		type int not null,
+		projects text[] not null,
+		amounts double precision[] default 0,
+		percents double precision[] default 0,
+		created timestamptz,
+		updated timestamptz
+	);
+	
+2022-04-18 16:54:34.800 CST [73173] ERROR:  syntax error at or near "precision" at character 146
+2022-04-18 16:54:34.800 CST [73173] STATEMENT:  create table source_spend_revenue(
+		id serial primary key,
+		month int not null,
+		type int not null,
+		projects text[] not null,
+		amounts double[] precision default 0,
+		percents double[] precision default 0,
+		created timestamptz,
+		updated timestamptz
+	);
+2022-04-18 16:54:47.898 CST [73173] ERROR:  column "amounts" is of type double precision[] but default expression is of type integer
+2022-04-18 16:54:47.898 CST [73173] HINT:  You will need to rewrite or cast the expression.
+2022-04-18 16:54:47.898 CST [73173] STATEMENT:  create table source_spend_revenue(
+		id serial primary key,
+		month int not null,
+		type int not null,
+		projects text[] not null,
+		amounts double precision[] default 0,
+		percents double precision[] default 0,
+		created timestamptz,
+		updated timestamptz
+	);
+2022-04-18 16:55:09.413 CST [73173] ERROR:  type "float64[]" does not exist at character 137
+2022-04-18 16:55:09.413 CST [73173] STATEMENT:  create table source_spend_revenue(
+		id serial primary key,
+		month int not null,
+		type int not null,
+		projects text[] not null,
+		amounts float64[] default 0,
+		percents float64[] default 0,
+		created timestamptz,
+		updated timestamptz
+	);
+2022-04-18 17:20:38.645 CST [73173] ERROR:  syntax error at or near "group" at character 123
+2022-04-18 17:20:38.645 CST [73173] STATEMENT:  
+	drop table if exists config_tableheader;
+	create table config_tableheader (
+		id serial primary key,
+		month int not null,
+		group text,
+		feeitems text[] not null,
+		formula text[],
+		created timestamptz,
+		updated timestamptz
+	)
+	
+2022-04-18 17:40:53.069 CST [73173] ERROR:  syntax error at or near "drop" at character 196
+2022-04-18 17:40:53.069 CST [73173] STATEMENT:  drop table if exists rule_intermidate_table;
+	create table rule_intermidate_table(
+		id serial primary key,
+		name text not null,
+		data jsonb not null,
+		created timestamptz, 
+		updated timestamptz
+	)
+	drop table rule_calculate_process;
+	create table rule_calculate_process(
+		id serial primary key,
+		name text not null,
+		param text[],
+		process text not null,
+		tables text[],
+		created timestamptz,
+		updated timestamptz
+	)
+2022-04-18 17:41:01.981 CST [73173] ERROR:  syntax error at or near "drop" at character 196
+2022-04-18 17:41:01.981 CST [73173] STATEMENT:  drop table if exists rule_intermidate_table;
+	create table rule_intermidate_table(
+		id serial primary key,
+		name text not null,
+		data jsonb not null,
+		created timestamptz, 
+		updated timestamptz
+	)
+	drop table if exists rule_calculate_process;
+	create table rule_calculate_process(
+		id serial primary key,
+		name text not null,
+		param text[],
+		process text not null,
+		tables text[],
+		created timestamptz,
+		updated timestamptz
+	)
+2022-04-18 17:41:18.033 CST [73173] ERROR:  syntax error at or near "drop" at character 813
+2022-04-18 17:41:18.033 CST [73173] STATEMENT:  drop table if exists account_record;
+	create table account_record (
+		month int primary key, 
+		y smallint,
+		m smallint,
+		status smallint default 0,
+		created timestamptz,
+		updated timestamptz
+	);
+	
+	drop table if exists source_spend_revenue;
+	create table source_spend_revenue(
+		id serial primary key,
+		month int not null,
+		type int not null,
+		projects text[] not null,
+		amounts double precision[] default '{}',
+		percents double precision[] default '{}',
+		created timestamptz,
+		updated timestamptz
+	);
+	
+	drop table if exists source_timesheet;
+	create table source_timesheet(
+		id serial primary key, 
+		month int not null,
+		employee text not null,
+		main text,
+		department text not null,
+		projectgroup text, 
+		projects text[] not null,
+		percents double precision[] default '{}',
+		created timestamptz,
+		updated timestamptz
+	)
+	
+	drop table if exists source_employee;
+	create table source_employee (
+		id serial primary key,
+		month int not null,
+		employee text not null,
+		main text, 
+		department text not null,
+		projectgroup text,
+		feeitems text[] not null,
+		fees double precision[] default '{}',
+		created timestamptz, 
+		updated timestamptz
+	)
+	drop table if exists source_service_fees;
+	create table source_service_fees(
+		id serial primary key,
+		month int not null,
+		type text not null,
+		feeitems text[] not null,
+		fees double precision[] not null,
+		created timestamptz,
+		updated timestamptz
+	)
+	
+	drop table if exists source_department_fee;
+	create table source_department_fee(
+		id serial primary key,
+		month int not null,
+		main text,
+		department text not null, 
+		fee double precision default 0,
+		created timestamptz,
+		updated timestamptz
+	)
+	
+	drop table if exists config_tableheader;
+	create table config_tableheader (
+		id serial primary key,
+		month int not null,
+		"group" text,
+		feeitems text[] not null,
+		formula text[],
+		created timestamptz,
+		updated timestamptz
+	)
+	
+	drop table if exists config_employee;
+	create table config_employee(
+		id serial primary key,
+		month int not null,
+		employee text not null,
+		main text,
+		department text not null,
+		projectgroup text,
+		direct_projectgroup text[],
+		in_public smallint default 0,
+		feeitems text[] not null,
+		val smallint[] default '{}',
+		created timestamptz,
+		updated timestamptz
+	)
+	drop table if exists config_project;
+	create table config_project(
+		id serial primary key,
+		month int not null,
+		project text not null,
+		projecgroup text,
+		main text,
+		feeitems text[] not null,
+		val smallint[] default '{}',
+		created timestamptz,
+		update timestamptz
+	)
+	drop table if exists rule_calculate;
+	create table rule_calculate(
+		id serial primary key,
+		type smallint not null,
+		rule text not null,
+		created timestamptz,
+		updated timestamptz
+	)
+	drop table if exists rule_intermidate_table;
+	create table rule_intermidate_table(
+		id serial primary key,
+		name text not null,
+		data jsonb not null,
+		created timestamptz, 
+		updated timestamptz
+	);
+	drop table if exists rule_calculate_process;
+	create table rule_calculate_process(
+		id serial primary key,
+		name text not null,
+		param text[],
+		process text not null,
+		tables text[],
+		created timestamptz,
+		updated timestamptz
+	)
+2022-04-18 17:41:33.661 CST [73173] ERROR:  syntax error at or near "drop" at character 813
+2022-04-18 17:41:33.661 CST [73173] STATEMENT:  drop table if exists account_record;
+	create table account_record (
+		month int primary key, 
+		y smallint,
+		m smallint,
+		status smallint default 0,
+		created timestamptz,
+		updated timestamptz
+	);
+	
+	drop table if exists source_spend_revenue;
+	create table source_spend_revenue(
+		id serial primary key,
+		month int not null,
+		type int not null,
+		projects text[] not null,
+		amounts double precision[] default '{}',
+		percents double precision[] default '{}',
+		created timestamptz,
+		updated timestamptz
+	);
+	
+	drop table if exists source_timesheet;
+	create table source_timesheet(
+		id serial primary key, 
+		month int not null,
+		employee text not null,
+		main text,
+		department text not null,
+		projectgroup text, 
+		projects text[] not null,
+		percents double precision[] default '{}',
+		created timestamptz,
+		updated timestamptz
+	)
+	
+	drop table if exists source_employee;
+	create table source_employee (
+		id serial primary key,
+		month int not null,
+		employee text not null,
+		main text, 
+		department text not null,
+		projectgroup text,
+		feeitems text[] not null,
+		fees double precision[] default '{}',
+		created timestamptz, 
+		updated timestamptz
+	);
+	drop table if exists source_service_fees;
+	create table source_service_fees(
+		id serial primary key,
+		month int not null,
+		type text not null,
+		feeitems text[] not null,
+		fees double precision[] not null,
+		created timestamptz,
+		updated timestamptz
+	)
+	
+	drop table if exists source_department_fee;
+	create table source_department_fee(
+		id serial primary key,
+		month int not null,
+		main text,
+		department text not null, 
+		fee double precision default 0,
+		created timestamptz,
+		updated timestamptz
+	)
+	
+	drop table if exists config_tableheader;
+	create table config_tableheader (
+		id serial primary key,
+		month int not null,
+		"group" text,
+		feeitems text[] not null,
+		formula text[],
+		created timestamptz,
+		updated timestamptz
+	)
+	
+	drop table if exists config_employee;
+	create table config_employee(
+		id serial primary key,
+		month int not null,
+		employee text not null,
+		main text,
+		department text not null,
+		projectgroup text,
+		direct_projectgroup text[],
+		in_public smallint default 0,
+		feeitems text[] not null,
+		val smallint[] default '{}',
+		created timestamptz,
+		updated timestamptz
+	)
+	drop table if exists config_project;
+	create table config_project(
+		id serial primary key,
+		month int not null,
+		project text not null,
+		projecgroup text,
+		main text,
+		feeitems text[] not null,
+		val smallint[] default '{}',
+		created timestamptz,
+		update timestamptz
+	)
+	drop table if exists rule_calculate;
+	create table rule_calculate(
+		id serial primary key,
+		type smallint not null,
+		rule text not null,
+		created timestamptz,
+		updated timestamptz
+	)
+	drop table if exists rule_intermidate_table;
+	create table rule_intermidate_table(
+		id serial primary key,
+		name text not null,
+		data jsonb not null,
+		created timestamptz, 
+		updated timestamptz
+	);
+	drop table if exists rule_calculate_process;
+	create table rule_calculate_process(
+		id serial primary key,
+		name text not null,
+		param text[],
+		process text not null,
+		tables text[],
+		created timestamptz,
+		updated timestamptz
+	)
+2022-04-18 17:41:46.046 CST [73173] ERROR:  syntax error at or near "drop" at character 1374
+2022-04-18 17:41:46.046 CST [73173] STATEMENT:  drop table if exists account_record;
+	create table account_record (
+		month int primary key, 
+		y smallint,
+		m smallint,
+		status smallint default 0,
+		created timestamptz,
+		updated timestamptz
+	);
+	
+	drop table if exists source_spend_revenue;
+	create table source_spend_revenue(
+		id serial primary key,
+		month int not null,
+		type int not null,
+		projects text[] not null,
+		amounts double precision[] default '{}',
+		percents double precision[] default '{}',
+		created timestamptz,
+		updated timestamptz
+	);
+	drop table if exists source_timesheet;
+	create table source_timesheet(
+		id serial primary key, 
+		month int not null,
+		employee text not null,
+		main text,
+		department text not null,
+		projectgroup text, 
+		projects text[] not null,
+		percents double precision[] default '{}',
+		created timestamptz,
+		updated timestamptz
+	);
+	drop table if exists source_employee;
+	create table source_employee (
+		id serial primary key,
+		month int not null,
+		employee text not null,
+		main text, 
+		department text not null,
+		projectgroup text,
+		feeitems text[] not null,
+		fees double precision[] default '{}',
+		created timestamptz, 
+		updated timestamptz
+	);
+	drop table if exists source_service_fees;
+	create table source_service_fees(
+		id serial primary key,
+		month int not null,
+		type text not null,
+		feeitems text[] not null,
+		fees double precision[] not null,
+		created timestamptz,
+		updated timestamptz
+	)
+	
+	drop table if exists source_department_fee;
+	create table source_department_fee(
+		id serial primary key,
+		month int not null,
+		main text,
+		department text not null, 
+		fee double precision default 0,
+		created timestamptz,
+		updated timestamptz
+	)
+	
+	drop table if exists config_tableheader;
+	create table config_tableheader (
+		id serial primary key,
+		month int not null,
+		"group" text,
+		feeitems text[] not null,
+		formula text[],
+		created timestamptz,
+		updated timestamptz
+	)
+	
+	drop table if exists config_employee;
+	create table config_employee(
+		id serial primary key,
+		month int not null,
+		employee text not null,
+		main text,
+		department text not null,
+		projectgroup text,
+		direct_projectgroup text[],
+		in_public smallint default 0,
+		feeitems text[] not null,
+		val smallint[] default '{}',
+		created timestamptz,
+		updated timestamptz
+	)
+	drop table if exists config_project;
+	create table config_project(
+		id serial primary key,
+		month int not null,
+		project text not null,
+		projecgroup text,
+		main text,
+		feeitems text[] not null,
+		val smallint[] default '{}',
+		created timestamptz,
+		update timestamptz
+	)
+	drop table if exists rule_calculate;
+	create table rule_calculate(
+		id serial primary key,
+		type smallint not null,
+		rule text not null,
+		created timestamptz,
+		updated timestamptz
+	)
+	drop table if exists rule_intermidate_table;
+	create table rule_intermidate_table(
+		id serial primary key,
+		name text not null,
+		data jsonb not null,
+		created timestamptz, 
+		updated timestamptz
+	);
+	drop table if exists rule_calculate_process;
+	create table rule_calculate_process(
+		id serial primary key,
+		name text not null,
+		param text[],
+		process text not null,
+		tables text[],
+		created timestamptz,
+		updated timestamptz
+	)
+2022-04-18 17:41:54.380 CST [73173] ERROR:  syntax error at or near "drop" at character 1618
+2022-04-18 17:41:54.380 CST [73173] STATEMENT:  drop table if exists account_record;
+	create table account_record (
+		month int primary key, 
+		y smallint,
+		m smallint,
+		status smallint default 0,
+		created timestamptz,
+		updated timestamptz
+	);
+	
+	drop table if exists source_spend_revenue;
+	create table source_spend_revenue(
+		id serial primary key,
+		month int not null,
+		type int not null,
+		projects text[] not null,
+		amounts double precision[] default '{}',
+		percents double precision[] default '{}',
+		created timestamptz,
+		updated timestamptz
+	);
+	drop table if exists source_timesheet;
+	create table source_timesheet(
+		id serial primary key, 
+		month int not null,
+		employee text not null,
+		main text,
+		department text not null,
+		projectgroup text, 
+		projects text[] not null,
+		percents double precision[] default '{}',
+		created timestamptz,
+		updated timestamptz
+	);
+	drop table if exists source_employee;
+	create table source_employee (
+		id serial primary key,
+		month int not null,
+		employee text not null,
+		main text, 
+		department text not null,
+		projectgroup text,
+		feeitems text[] not null,
+		fees double precision[] default '{}',
+		created timestamptz, 
+		updated timestamptz
+	);
+	drop table if exists source_service_fees;
+	create table source_service_fees(
+		id serial primary key,
+		month int not null,
+		type text not null,
+		feeitems text[] not null,
+		fees double precision[] not null,
+		created timestamptz,
+		updated timestamptz
+	);
+	drop table if exists source_department_fee;
+	create table source_department_fee(
+		id serial primary key,
+		month int not null,
+		main text,
+		department text not null, 
+		fee double precision default 0,
+		created timestamptz,
+		updated timestamptz
+	)
+	
+	drop table if exists config_tableheader;
+	create table config_tableheader (
+		id serial primary key,
+		month int not null,
+		"group" text,
+		feeitems text[] not null,
+		formula text[],
+		created timestamptz,
+		updated timestamptz
+	)
+	
+	drop table if exists config_employee;
+	create table config_employee(
+		id serial primary key,
+		month int not null,
+		employee text not null,
+		main text,
+		department text not null,
+		projectgroup text,
+		direct_projectgroup text[],
+		in_public smallint default 0,
+		feeitems text[] not null,
+		val smallint[] default '{}',
+		created timestamptz,
+		updated timestamptz
+	)
+	drop table if exists config_project;
+	create table config_project(
+		id serial primary key,
+		month int not null,
+		project text not null,
+		projecgroup text,
+		main text,
+		feeitems text[] not null,
+		val smallint[] default '{}',
+		created timestamptz,
+		update timestamptz
+	)
+	drop table if exists rule_calculate;
+	create table rule_calculate(
+		id serial primary key,
+		type smallint not null,
+		rule text not null,
+		created timestamptz,
+		updated timestamptz
+	)
+	drop table if exists rule_intermidate_table;
+	create table rule_intermidate_table(
+		id serial primary key,
+		name text not null,
+		data jsonb not null,
+		created timestamptz, 
+		updated timestamptz
+	);
+	drop table if exists rule_calculate_process;
+	create table rule_calculate_process(
+		id serial primary key,
+		name text not null,
+		param text[],
+		process text not null,
+		tables text[],
+		created timestamptz,
+		updated timestamptz
+	)
+2022-04-18 17:42:04.358 CST [73173] ERROR:  syntax error at or near "drop" at character 2202
+2022-04-18 17:42:04.358 CST [73173] STATEMENT:  drop table if exists account_record;
+	create table account_record (
+		month int primary key, 
+		y smallint,
+		m smallint,
+		status smallint default 0,
+		created timestamptz,
+		updated timestamptz
+	);
+	
+	drop table if exists source_spend_revenue;
+	create table source_spend_revenue(
+		id serial primary key,
+		month int not null,
+		type int not null,
+		projects text[] not null,
+		amounts double precision[] default '{}',
+		percents double precision[] default '{}',
+		created timestamptz,
+		updated timestamptz
+	);
+	drop table if exists source_timesheet;
+	create table source_timesheet(
+		id serial primary key, 
+		month int not null,
+		employee text not null,
+		main text,
+		department text not null,
+		projectgroup text, 
+		projects text[] not null,
+		percents double precision[] default '{}',
+		created timestamptz,
+		updated timestamptz
+	);
+	drop table if exists source_employee;
+	create table source_employee (
+		id serial primary key,
+		month int not null,
+		employee text not null,
+		main text, 
+		department text not null,
+		projectgroup text,
+		feeitems text[] not null,
+		fees double precision[] default '{}',
+		created timestamptz, 
+		updated timestamptz
+	);
+	drop table if exists source_service_fees;
+	create table source_service_fees(
+		id serial primary key,
+		month int not null,
+		type text not null,
+		feeitems text[] not null,
+		fees double precision[] not null,
+		created timestamptz,
+		updated timestamptz
+	);
+	drop table if exists source_department_fee;
+	create table source_department_fee(
+		id serial primary key,
+		month int not null,
+		main text,
+		department text not null, 
+		fee double precision default 0,
+		created timestamptz,
+		updated timestamptz
+	);
+	drop table if exists config_tableheader;
+	create table config_tableheader (
+		id serial primary key,
+		month int not null,
+		"group" text,
+		feeitems text[] not null,
+		formula text[],
+		created timestamptz,
+		updated timestamptz
+	);
+	drop table if exists config_employee;
+	create table config_employee(
+		id serial primary key,
+		month int not null,
+		employee text not null,
+		main text,
+		department text not null,
+		projectgroup text,
+		direct_projectgroup text[],
+		in_public smallint default 0,
+		feeitems text[] not null,
+		val smallint[] default '{}',
+		created timestamptz,
+		updated timestamptz
+	)
+	drop table if exists config_project;
+	create table config_project(
+		id serial primary key,
+		month int not null,
+		project text not null,
+		projecgroup text,
+		main text,
+		feeitems text[] not null,
+		val smallint[] default '{}',
+		created timestamptz,
+		update timestamptz
+	)
+	drop table if exists rule_calculate;
+	create table rule_calculate(
+		id serial primary key,
+		type smallint not null,
+		rule text not null,
+		created timestamptz,
+		updated timestamptz
+	)
+	drop table if exists rule_intermidate_table;
+	create table rule_intermidate_table(
+		id serial primary key,
+		name text not null,
+		data jsonb not null,
+		created timestamptz, 
+		updated timestamptz
+	);
+	drop table if exists rule_calculate_process;
+	create table rule_calculate_process(
+		id serial primary key,
+		name text not null,
+		param text[],
+		process text not null,
+		tables text[],
+		created timestamptz,
+		updated timestamptz
+	)
+2022-04-18 20:58:26.728 CST [27566] LOG:  received smart shutdown request
+2022-04-18 20:58:26.730 CST [27566] LOG:  background worker "logical replication launcher" (PID 27573) exited with exit code 1
+2022-04-18 20:58:26.730 CST [27568] LOG:  shutting down
+2022-04-18 20:58:26.745 CST [27566] LOG:  database system is shut down
+2022-04-19 14:34:53.454 CST [51753] LOG:  starting PostgreSQL 14.1 on x86_64-apple-darwin20.6.0, compiled by Apple clang version 13.0.0 (clang-1300.0.29.3), 64-bit
+2022-04-19 14:34:53.458 CST [51753] LOG:  listening on IPv6 address "::1", port 5432
+2022-04-19 14:34:53.458 CST [51753] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2022-04-19 14:34:53.459 CST [51753] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2022-04-19 14:34:53.499 CST [51754] LOG:  database system was shut down at 2022-04-18 20:58:26 CST
+2022-04-19 14:34:53.512 CST [51753] LOG:  database system is ready to accept connections
+2022-04-19 15:48:32.863 CST [66381] ERROR:  column "index" of relation "source_spend_revenue" does not exist at character 35
+2022-04-19 15:48:32.863 CST [66381] STATEMENT:  INSERT INTO source_spend_revenue (index, month, type, projects, amounts, percents) VALUES (0, 202204, 0, ARRAY['纸牌-Collection Fish','纸牌-Solitaire 3D Fish','纸牌-Solitaire Dragons','纸牌-Solitaire Fish','纸牌-Spider Fish','纸牌-Tripeaks Fish','纸牌-Solitaire Farm Friends','纸牌-Solitaire Garden','纸牌-Solitaire Resort','纸牌-Solitaire Club','纸牌-Solitaire Dark Mode','智力-Block Fish','智力-Block Farm','智力-Woody Dice Merge','智力-Royal Breaker','智力-Breaker Fun','智力-Breaker Fun 2','智力-Tile Farm','智力-Tile Match','智力-Sort Fun','智力-Tile Travel 3D','智力-Merge Cooking','纸牌-Tripeaks Lucky','智力-Dice Merge','智力-Tile Artist'], ARRAY[55000.0,45000.0,35000.0,35000.0,35000.0,35000.0,35000.0,45000.0,55000.0,45000.0,35000.0,35000.0,35000.0,35000.0,35000.0,45000.0,55000.0,45000.0,35000.0,35000.0,35000.0,35000.0,35000.0,45000.0,40000.0], ARRAY[5.5,4.5,3.5,3.5,3.5,3.5,3.5,4.5,5.5,4.5,3.5,3.5,3.5,3.5,3.5,4.5,5.5,4.5,3.5,3.5,3.5,3.5,3.5,4.5,4.0])
+2022-04-19 16:45:10.936 CST [51857] ERROR:  column "created" is of type timestamp with time zone but default expression is of type time with time zone
+2022-04-19 16:45:10.936 CST [51857] HINT:  You will need to rewrite or cast the expression.
+2022-04-19 16:45:10.936 CST [51857] STATEMENT:  ALTER TABLE IF EXISTS public.source_spend_revenue
+	    ALTER COLUMN created SET DEFAULT CURRENT_TIME;
+	
+	ALTER TABLE IF EXISTS public.source_spend_revenue
+	    ALTER COLUMN updated SET DEFAULT CURRENT_TIME;
