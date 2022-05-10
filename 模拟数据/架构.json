@@ -1,0 +1,152 @@
+[
+    {
+        "main": "BT",
+        "position": "北京",
+        "name": "财务部",
+        "type": "职能部门"
+    },
+    {
+        "main": "BT",
+        "position": "北京",
+        "name": "总裁办",
+        "type": "职能部门"
+    },
+    {
+        "main": "BT",
+        "position": "北京",
+        "name": "人事行政部",
+        "type": "职能部门"
+    },
+    {
+        "main": "BT",
+        "position": "北京",
+        "name": "发行部",
+        "type": "-"
+    },
+    {
+        "main": "BT",
+        "position": "北京",
+        "name": "中台研发部",
+        "type": "中台部门"
+    },
+    {
+        "main": "BT",
+        "position": "北京",
+        "name": "运营部",
+        "type": "运营部门"
+    },
+    {
+        "main": "BT",
+        "position": "北京",
+        "name": "市场投放组",
+        "type": "市场部门"
+    },
+    {
+        "main": "BT",
+        "position": "北京",
+        "name": "市场素材组",
+        "type": "市场部门"
+    },
+    {
+        "main": "BT",
+        "position": "北京",
+        "name": "中台美术部",
+        "type": "中台部门"
+    },
+    {
+        "main": "BT",
+        "position": "北京",
+        "name": "A1项目",
+        "type": "研发部门-A直接项目组"
+    },
+    {
+        "main": "BT",
+        "position": "北京",
+        "name": "A2项目",
+        "type": "研发部门-A直接项目组"
+    },
+    {
+        "main": "BT",
+        "position": "北京",
+        "name": "A3项目",
+        "type": "研发部门-A直接项目组"
+    },
+    {
+        "main": "BT",
+        "position": "北京",
+        "name": "A项目美术",
+        "type": "研发部门"
+    },
+    {
+        "main": "BT",
+        "position": "北京",
+        "name": "A项目程序",
+        "type": "研发部门"
+    },
+    {
+        "main": "BT",
+        "position": "北京",
+        "name": "中台测试部",
+        "type": "中台部门"
+    },
+    {
+        "main": "BT",
+        "position": "北京",
+        "name": "H1项目",
+        "type": "研发部门-H直接项目组"
+    },
+    {
+        "main": "BT",
+        "position": "北京",
+        "name": "H2项目",
+        "type": "研发部门-H直接项目组"
+    },
+    {
+        "main": "CT",
+        "position": "成都",
+        "name": "人事行政部",
+        "type": "职能部门"
+    },
+    {
+        "main": "CT",
+        "position": "成都",
+        "name": "运营部",
+        "type": "运营部门"
+    },
+    {
+        "main": "CT",
+        "position": "成都",
+        "name": "市场素材组",
+        "type": "市场部门"
+    },
+    {
+        "main": "CT",
+        "position": "成都",
+        "name": "美术中台部",
+        "type": "中台部门"
+    },
+    {
+        "main": "CT",
+        "position": "成都",
+        "name": "T1项目",
+        "type": "研发部门-T直接项目组"
+    },
+    {
+        "main": "CT",
+        "position": "成都",
+        "name": "T2项目",
+        "type": "研发部门-T直接项目组"
+    },
+    {
+        "main": "CT",
+        "position": "成都",
+        "name": "T项目美术",
+        "type": "研发部门"
+    },
+    {
+        "main": "CT",
+        "position": "成都",
+        "name": "研发中台部",
+        "type": "中台部门"
+    }
+]
