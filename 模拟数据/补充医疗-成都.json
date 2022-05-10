@@ -1,0 +1,716 @@
+[
+    {
+        "month": 202203,
+        "employee": "P010",
+        "main": "CT",
+        "department": "T2项目",
+        "project_group": "",
+        "type": 3,
+        "fee_items": [
+            "补充医疗"
+        ],
+        "fees": [
+            80.91
+        ]
+    },
+    {
+        "month": 202203,
+        "employee": "P011",
+        "main": "CT",
+        "department": "T2项目",
+        "project_group": "",
+        "type": 3,
+        "fee_items": [
+            "补充医疗"
+        ],
+        "fees": [
+            80.91
+        ]
+    },
+    {
+        "month": 202203,
+        "employee": "P013",
+        "main": "CT",
+        "department": "T2项目",
+        "project_group": "",
+        "type": 3,
+        "fee_items": [
+            "补充医疗"
+        ],
+        "fees": [
+            80.91
+        ]
+    },
+    {
+        "month": 202203,
+        "employee": "P015",
+        "main": "CT",
+        "department": "T2项目",
+        "project_group": "",
+        "type": 3,
+        "fee_items": [
+            "补充医疗"
+        ],
+        "fees": [
+            80.91
+        ]
+    },
+    {
+        "month": 202203,
+        "employee": "P016",
+        "main": "CT",
+        "department": "T2项目",
+        "project_group": "",
+        "type": 3,
+        "fee_items": [
+            "补充医疗"
+        ],
+        "fees": [
+            132.06
+        ]
+    },
+    {
+        "month": 202203,
+        "employee": "P069",
+        "main": "CT",
+        "department": "T2项目",
+        "project_group": "",
+        "type": 3,
+        "fee_items": [
+            "补充医疗"
+        ],
+        "fees": [
+            80.91
+        ]
+    },
+    {
+        "month": 202203,
+        "employee": "P020",
+        "main": "CT",
+        "department": "T2项目",
+        "project_group": "",
+        "type": 3,
+        "fee_items": [
+            "补充医疗"
+        ],
+        "fees": [
+            80.91
+        ]
+    },
+    {
+        "month": 202203,
+        "employee": "P023",
+        "main": "CT",
+        "department": "T2项目",
+        "project_group": "",
+        "type": 3,
+        "fee_items": [
+            "补充医疗"
+        ],
+        "fees": [
+            80.91
+        ]
+    },
+    {
+        "month": 202203,
+        "employee": "P024",
+        "main": "CT",
+        "department": "T2项目",
+        "project_group": "",
+        "type": 3,
+        "fee_items": [
+            "补充医疗"
+        ],
+        "fees": [
+            80.91
+        ]
+    },
+    {
+        "month": 202203,
+        "employee": "P027",
+        "main": "CT",
+        "department": "T2项目",
+        "project_group": "",
+        "type": 3,
+        "fee_items": [
+            "补充医疗"
+        ],
+        "fees": [
+            80.91
+        ]
+    },
+    {
+        "month": 202203,
+        "employee": "P057",
+        "main": "CT",
+        "department": "T2项目",
+        "project_group": "",
+        "type": 3,
+        "fee_items": [
+            "补充医疗"
+        ],
+        "fees": [
+            80.91
+        ]
+    },
+    {
+        "month": 202203,
+        "employee": "P062",
+        "main": "CT",
+        "department": "T2项目",
+        "project_group": "",
+        "type": 3,
+        "fee_items": [
+            "补充医疗"
+        ],
+        "fees": [
+            80.91
+        ]
+    },
+    {
+        "month": 202203,
+        "employee": "P078",
+        "main": "CT",
+        "department": "T2项目",
+        "project_group": "",
+        "type": 3,
+        "fee_items": [
+            "补充医疗"
+        ],
+        "fees": [
+            39.15
+        ]
+    },
+    {
+        "month": 202203,
+        "employee": "P074",
+        "main": "CT",
+        "department": "T2项目",
+        "project_group": "",
+        "type": 3,
+        "fee_items": [
+            "补充医疗"
+        ],
+        "fees": [
+            39.15
+        ]
+    },
+    {
+        "month": 202203,
+        "employee": "P071",
+        "main": "CT",
+        "department": "T2项目",
+        "project_group": "",
+        "type": 3,
+        "fee_items": [
+            "补充医疗"
+        ],
+        "fees": [
+            39.15
+        ]
+    },
+    {
+        "month": 202203,
+        "employee": "P053",
+        "main": "CT",
+        "department": "人事行政部",
+        "project_group": "",
+        "type": 3,
+        "fee_items": [
+            "补充医疗"
+        ],
+        "fees": [
+            80.91
+        ]
+    },
+    {
+        "month": 202203,
+        "employee": "P059",
+        "main": "CT",
+        "department": "人事行政部",
+        "project_group": "",
+        "type": 3,
+        "fee_items": [
+            "补充医疗"
+        ],
+        "fees": [
+            80.91
+        ]
+    },
+    {
+        "month": 202203,
+        "employee": "P060",
+        "main": "CT",
+        "department": "人事行政部",
+        "project_group": "",
+        "type": 3,
+        "fee_items": [
+            "补充医疗"
+        ],
+        "fees": [
+            80.91
+        ]
+    },
+    {
+        "month": 202203,
+        "employee": "P029",
+        "main": "CT",
+        "department": "市场部",
+        "project_group": "",
+        "type": 3,
+        "fee_items": [
+            "补充医疗"
+        ],
+        "fees": [
+            80.91
+        ]
+    },
+    {
+        "month": 202203,
+        "employee": "P030",
+        "main": "CT",
+        "department": "市场部",
+        "project_group": "",
+        "type": 3,
+        "fee_items": [
+            "补充医疗"
+        ],
+        "fees": [
+            80.91
+        ]
+    },
+    {
+        "month": 202203,
+        "employee": "P031",
+        "main": "CT",
+        "department": "市场部",
+        "project_group": "",
+        "type": 3,
+        "fee_items": [
+            "补充医疗"
+        ],
+        "fees": [
+            80.91
+        ]
+    },
+    {
+        "month": 202203,
+        "employee": "P026",
+        "main": "CT",
+        "department": "运营部",
+        "project_group": "",
+        "type": 3,
+        "fee_items": [
+            "补充医疗"
+        ],
+        "fees": [
+            80.91
+        ]
+    },
+    {
+        "month": 202203,
+        "employee": "P052",
+        "main": "CT",
+        "department": "运营部",
+        "project_group": "",
+        "type": 3,
+        "fee_items": [
+            "补充医疗"
+        ],
+        "fees": [
+            80.91
+        ]
+    },
+    {
+        "month": 202203,
+        "employee": "P066",
+        "main": "CT",
+        "department": "运营部",
+        "project_group": "",
+        "type": 3,
+        "fee_items": [
+            "补充医疗"
+        ],
+        "fees": [
+            80.91
+        ]
+    },
+    {
+        "month": 202203,
+        "employee": "P028",
+        "main": "CT",
+        "department": "美术中台部",
+        "project_group": "",
+        "type": 3,
+        "fee_items": [
+            "补充医疗"
+        ],
+        "fees": [
+            80.91
+        ]
+    },
+    {
+        "month": 202203,
+        "employee": "P058",
+        "main": "CT",
+        "department": "美术中台部",
+        "project_group": "",
+        "type": 3,
+        "fee_items": [
+            "补充医疗"
+        ],
+        "fees": [
+            80.91
+        ]
+    },
+    {
+        "month": 202203,
+        "employee": "P072",
+        "main": "CT",
+        "department": "美术中台部",
+        "project_group": "",
+        "type": 3,
+        "fee_items": [
+            "补充医疗"
+        ],
+        "fees": [
+            39.15
+        ]
+    },
+    {
+        "month": 202203,
+        "employee": "P073",
+        "main": "CT",
+        "department": "美术中台部",
+        "project_group": "",
+        "type": 3,
+        "fee_items": [
+            "补充医疗"
+        ],
+        "fees": [
+            39.15
+        ]
+    },
+    {
+        "month": 202203,
+        "employee": "P079",
+        "main": "CT",
+        "department": "美术中台部",
+        "project_group": "",
+        "type": 3,
+        "fee_items": [
+            "补充医疗"
+        ],
+        "fees": [
+            39.15
+        ]
+    },
+    {
+        "month": 202203,
+        "employee": "P076",
+        "main": "CT",
+        "department": "美术中台部",
+        "project_group": "",
+        "type": 3,
+        "fee_items": [
+            "补充医疗"
+        ],
+        "fees": [
+            39.15
+        ]
+    },
+    {
+        "month": 202203,
+        "employee": "P077",
+        "main": "CT",
+        "department": "美术中台部",
+        "project_group": "",
+        "type": 3,
+        "fee_items": [
+            "补充医疗"
+        ],
+        "fees": [
+            39.15
+        ]
+    },
+    {
+        "month": 202203,
+        "employee": "P048",
+        "main": "CT",
+        "department": "T项目美术",
+        "project_group": "",
+        "type": 3,
+        "fee_items": [
+            "补充医疗"
+        ],
+        "fees": [
+            132.06
+        ]
+    },
+    {
+        "month": 202203,
+        "employee": "P050",
+        "main": "CT",
+        "department": "T项目美术",
+        "project_group": "",
+        "type": 3,
+        "fee_items": [
+            "补充医疗"
+        ],
+        "fees": [
+            80.91
+        ]
+    },
+    {
+        "month": 202203,
+        "employee": "P063",
+        "main": "CT",
+        "department": "T项目美术",
+        "project_group": "",
+        "type": 3,
+        "fee_items": [
+            "补充医疗"
+        ],
+        "fees": [
+            80.91
+        ]
+    },
+    {
+        "month": 202203,
+        "employee": "P064",
+        "main": "CT",
+        "department": "T项目美术",
+        "project_group": "",
+        "type": 3,
+        "fee_items": [
+            "补充医疗"
+        ],
+        "fees": [
+            80.91
+        ]
+    },
+    {
+        "month": 202203,
+        "employee": "P040",
+        "main": "CT",
+        "department": "研发中台部",
+        "project_group": "",
+        "type": 3,
+        "fee_items": [
+            "补充医疗"
+        ],
+        "fees": [
+            165.85
+        ]
+    },
+    {
+        "month": 202203,
+        "employee": "P041",
+        "main": "CT",
+        "department": "研发中台部",
+        "project_group": "",
+        "type": 3,
+        "fee_items": [
+            "补充医疗"
+        ],
+        "fees": [
+            80.91
+        ]
+    },
+    {
+        "month": 202203,
+        "employee": "P042",
+        "main": "CT",
+        "department": "研发中台部",
+        "project_group": "",
+        "type": 3,
+        "fee_items": [
+            "补充医疗"
+        ],
+        "fees": [
+            132.06
+        ]
+    },
+    {
+        "month": 202203,
+        "employee": "P043",
+        "main": "CT",
+        "department": "研发中台部",
+        "project_group": "",
+        "type": 3,
+        "fee_items": [
+            "补充医疗"
+        ],
+        "fees": [
+            132.06
+        ]
+    },
+    {
+        "month": 202203,
+        "employee": "P055",
+        "main": "CT",
+        "department": "研发中台部",
+        "project_group": "",
+        "type": 3,
+        "fee_items": [
+            "补充医疗"
+        ],
+        "fees": [
+            80.91
+        ]
+    },
+    {
+        "month": 202203,
+        "employee": "P054",
+        "main": "CT",
+        "department": "研发中台部",
+        "project_group": "",
+        "type": 3,
+        "fee_items": [
+            "补充医疗"
+        ],
+        "fees": [
+            80.91
+        ]
+    },
+    {
+        "month": 202203,
+        "employee": "P061",
+        "main": "CT",
+        "department": "研发中台部",
+        "project_group": "",
+        "type": 3,
+        "fee_items": [
+            "补充医疗"
+        ],
+        "fees": [
+            80.91
+        ]
+    },
+    {
+        "month": 202203,
+        "employee": "P032",
+        "main": "CT",
+        "department": "T1项目",
+        "project_group": "",
+        "type": 3,
+        "fee_items": [
+            "补充医疗"
+        ],
+        "fees": [
+            80.91
+        ]
+    },
+    {
+        "month": 202203,
+        "employee": "P033",
+        "main": "CT",
+        "department": "T1项目",
+        "project_group": "",
+        "type": 3,
+        "fee_items": [
+            "补充医疗"
+        ],
+        "fees": [
+            80.91
+        ]
+    },
+    {
+        "month": 202203,
+        "employee": "P034",
+        "main": "CT",
+        "department": "T1项目",
+        "project_group": "",
+        "type": 3,
+        "fee_items": [
+            "补充医疗"
+        ],
+        "fees": [
+            80.91
+        ]
+    },
+    {
+        "month": 202203,
+        "employee": "P038",
+        "main": "CT",
+        "department": "T1项目",
+        "project_group": "",
+        "type": 3,
+        "fee_items": [
+            "补充医疗"
+        ],
+        "fees": [
+            80.91
+        ]
+    },
+    {
+        "month": 202203,
+        "employee": "P039",
+        "main": "CT",
+        "department": "T1项目",
+        "project_group": "",
+        "type": 3,
+        "fee_items": [
+            "补充医疗"
+        ],
+        "fees": [
+            132.06
+        ]
+    },
+    {
+        "month": 202203,
+        "employee": "P035",
+        "main": "CT",
+        "department": "T1项目",
+        "project_group": "",
+        "type": 3,
+        "fee_items": [
+            "补充医疗"
+        ],
+        "fees": [
+            80.91
+        ]
+    },
+    {
+        "month": 202203,
+        "employee": "P036",
+        "main": "CT",
+        "department": "T1项目",
+        "project_group": "",
+        "type": 3,
+        "fee_items": [
+            "补充医疗"
+        ],
+        "fees": [
+            80.91
+        ]
+    },
+    {
+        "month": 202203,
+        "employee": "P037",
+        "main": "CT",
+        "department": "T1项目",
+        "project_group": "",
+        "type": 3,
+        "fee_items": [
+            "补充医疗"
+        ],
+        "fees": [
+            80.91
+        ]
+    },
+    {
+        "month": 202203,
+        "employee": "P070",
+        "main": "CT",
+        "department": "T1项目",
+        "project_group": "",
+        "type": 3,
+        "fee_items": [
+            "补充医疗"
+        ],
+        "fees": [
+            39.15
+        ]
+    }
+]
